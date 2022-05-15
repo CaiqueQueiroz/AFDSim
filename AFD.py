@@ -6,13 +6,11 @@
 E = [str(x) for x in input("\n Digite os estados\n").split() ]
 Sigma = [str(x) for x in input("\n Digite o alfabeto \n").split()]
 n = int(input("Digite o numero de transições"))
-co = 0
 Delta = {'e': 'e'}
 while ( n != 0):
     o, c, d = [str(x) for x in input("\n Digite as transições \n").split(',')]
     Delta[o, c] = d
     n = n - 1
-    co = co + 1
 i = input("Digite o estado inicial")
 F = [str(x) for x in input("\n Digite os estados finais \n").split()]
 Cadeia = [str(x) for x in input("\n Digite as palavras teste \n").split()]
